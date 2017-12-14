@@ -1,0 +1,21 @@
+<suite name="Test suite Network Profile" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="https://staging.aod.wavelink.com/AvalancheWeb/login.jsf" />
+    <parameter name="username" value="Yanxi.diao@landesk.com" />
+    <parameter name="password" value="landesk1" />
+    <parameter name="profileName" value="0JasonNetworkProfile" />  
+    <test name="login" preserve-order="true">
+        <classes>
+            <class name="com.landesk.avalanche.TestCases.TestCaseNetworkProfile">
+                <methods>
+                    <include name="test53136" />
+                    <include name="test53142" />
+                    <include name="test53169" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

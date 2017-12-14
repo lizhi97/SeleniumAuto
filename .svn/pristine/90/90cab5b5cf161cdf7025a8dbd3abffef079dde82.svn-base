@@ -1,0 +1,17 @@
+<suite name="69651 Schedule scripts from Team scripts group using device group" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="http://w2k8r2-sel/remote/frameset.aspx" />
+    <parameter name="user1" value="LoginExe/winsy1.exe" />
+    <test name="scheduleTeamScriptUsingTeamDeviceGroup" preserve-order="true">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCasesForIE.ScheduleTeamScriptUsingTeamDeviceGroup">
+                <methods>
+                    <include name="scheduleTeamScriptUsingTeamDeviceGroup" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [Test suite Network Profile]">
+  <parameter name="username" value="Yanxi.diao@landesk.com"/>
+  <parameter name="password" value="landesk1"/>
+  <parameter name="profileName" value="0JasonNetworkProfile"/>
+  <parameter name="url" value="https://staging.aod.wavelink.com/AvalancheWeb/login.jsf"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="login(failed)">
+    <classes>
+      <class name="com.landesk.avalanche.TestCases.TestCaseNetworkProfile">
+        <methods>
+          <include name="test53142" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.landesk.avalanche.TestCases.TestCaseNetworkProfile -->
+    </classes>
+  </test> <!-- login(failed) -->
+</suite> <!-- Failed suite [Test suite Network Profile] -->

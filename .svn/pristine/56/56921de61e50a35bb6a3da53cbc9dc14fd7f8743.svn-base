@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="59681 Team repots can run successfully" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="http://w2k8r2-sel/remote/frameset.aspx" />
+    <parameter name="loginexe" value="LoginExe/winsy2.exe" />
+    <parameter name="teamreportname" value="auto testing report" />
+       <test name="invokeTeamReport">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCasesForIE.InvokeTeamReport">
+                <methods>
+                    <include name="invokeTeamReport" />
+                </methods>
+            </class>
+        </classes>
+      </test>
+</suite>

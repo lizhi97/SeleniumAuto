@@ -1,0 +1,17 @@
+<suite name="62494 Default setting persist and applied to all users" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="http://w2k8r2-sel/remote/frameset.aspx" />
+    <parameter name="loginexe" value="LoginExe/IELogin-cn.exe" />
+    <test name="pageSettings" preserve-order="true">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCasesForIE.PageSettings">
+                <methods>
+                    <include name="pageSettings" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

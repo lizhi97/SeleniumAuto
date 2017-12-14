@@ -1,0 +1,24 @@
+<suite name="59577 Schedule software packages from Team packages group with different limited scopes" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="http://w2k8r2-sel/remote/frameset.aspx" />
+    <parameter name="loginexe" value="LoginExe/dandan76.exe" />
+    <parameter name="loginexe1" value="LoginExe/winsy1.exe" />
+    <parameter name="loginexe2" value="LoginExe/winsy2.exe" />
+    <parameter name="user1" value="winsy1" />
+    <parameter name="CoreName" value="W2K8R2-SEL" />
+    <parameter name="client1" value="W7X64SP1-SEL" />
+    <parameter name="client2" value="WIN81X64-SEL" />
+    <parameter name="PrimaryFile" value="http://w2k8r2-sel/ldlogon/winsy/exe/7z465.exe" />   
+    <test name="schedulePackages" preserve-order="true">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCases.SchedulePackages">
+                <methods>
+                    <include name="schedulePackages" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

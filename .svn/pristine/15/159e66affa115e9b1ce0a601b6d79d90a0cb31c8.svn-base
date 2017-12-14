@@ -1,0 +1,25 @@
+<suite name="59625 Schedule software packages from team packages group using device group" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="http://w2k8r2-sel/remote/frameset.aspx" />
+    <parameter name="user1" value="LoginExe/winsy1.exe" />
+    <parameter name="loginexe" value="LoginExe/dandan76.exe" />
+    <parameter name="preName" value="0000" />
+    <parameter name="packName"  value="Vivian Bat Package" />
+    <parameter name="DistriMethType" value="Multicast (cache only)" />
+    <parameter name="methodName"  value="Vivian Multicast Method" />
+    <parameter name="taskName"	value="Vivian Bat Task"/>
+    <parameter name="packagefile" value="http://w2k8r2-sel/ldlogon/winsy/bat/echo.bat" />
+    <test name="scheduleUsingDeviceGroup" preserve-order="true">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCasesForIE.ScheduleUsingDeviceGroup">
+                <methods>
+                    <include name="scheduleUsingDeviceGroup" />
+                    
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

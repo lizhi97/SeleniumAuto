@@ -1,0 +1,26 @@
+<suite name="Test suite Mobile Device Profile" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="https://staging.aod.wavelink.com/AvalancheWeb/login.jsf" />
+    <parameter name="username" value="Yanxi.diao@landesk.com" />
+    <parameter name="password" value="landesk1" />
+    <parameter name="mdproname" value="002-winsy"/>
+    <parameter name="_mdprofileName" value="0000auto_MDprofle"/>
+    
+    <test name="Test Case 54207 Avalanche Web Console Profile Mobile Device Profiles Validate Add MD Profiles" preserve-order="true">
+       <classes>
+            <class name="com.landesk.avalanche.TestCases.TestCase54207">
+                <methods>
+                   <include name="test1" />
+                    
+                </methods> 
+               	
+               	
+            </class>
+        </classes>      
+    </test>
+    
+  
+</suite>

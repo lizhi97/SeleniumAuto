@@ -1,0 +1,23 @@
+<suite name="59662 Schedule software packages from Team packages group using query group which created by other team member." verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+</listeners>
+    <parameter name="url" value="http://w2k8r2-sel/remote/frameset.aspx" />
+    <parameter name="loginexe" value="LoginExe/dandan76.exe" />
+    <parameter name="user1" value="LoginExe/winsy1.exe" />
+    <parameter name="user2" value="LoginExe/winsy2.exe" />
+    <parameter name="computerName" value="HPRP5800-PC" />
+    <parameter name="packName"  value="001JackMSIPackage" />
+    <parameter name="methodName"  value="001JackPolicyMethod" />
+    <parameter name="packagefile" value="http://w2k8r2-sel/ldlogon/winsy/msi/orca.Msi" />
+    <test name="DeploySoftwareWithPolicy" preserve-order="true">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCases.DeploySoftwareWithPolicy">
+                <methods>
+                    <include name="deploySoftwareWithPolicy" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

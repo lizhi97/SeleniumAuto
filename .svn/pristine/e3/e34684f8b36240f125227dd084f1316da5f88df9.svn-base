@@ -1,0 +1,18 @@
+<suite name="62505 Real-time monitoring can open in web console" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="http://w2k8r2-sel/remote/frameset.aspx" />
+    <parameter name="loginexe" value="LoginExe/dandan76.exe" />
+    <parameter name="client" value="W7X64SP1-SEL" />
+    <test name="realtimeMonitor" preserve-order="true">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCasesForIE.RealtimeMonitor">
+                <methods>
+                    <include name="realtimeMonitor" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

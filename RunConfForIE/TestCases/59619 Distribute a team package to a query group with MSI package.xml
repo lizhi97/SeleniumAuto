@@ -1,0 +1,23 @@
+<suite name="59619 Distribute a team package to a query group with MSI package" verbose="2">
+ <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="http://172.29.40.76/remote/frameset.aspx" />
+    <parameter name="loginexe" value="LoginExe/winsy1.exe" />
+    <parameter name="admin" value="LoginExe/dandan76.exe" />>
+    <parameter name="packagefile" value="http://172.29.40.76/ldlogon/winsy/MSI/dotrover.msi" />
+    <parameter name="computerName" value="PCORE02" />
+    <parameter name="queryName" value="GquQuery112" />
+    <parameter name="queryGroup" value="'selenium team' queries" />
+    <test name="createDistriQuerytask" preserve-order="true">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCasesForIE.CreateDistriQueryTask">
+                <methods>
+                    <include name="createDistriQuerytask" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+

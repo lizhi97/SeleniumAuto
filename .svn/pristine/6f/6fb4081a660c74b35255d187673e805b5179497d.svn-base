@@ -1,0 +1,24 @@
+<suite name="59606 Schedule software packages from team packages group witch admin user" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="http://w2k8r2-sel/remote/frameset.aspx" />
+    <parameter name="loginexe" value="LoginExe/dandan76.exe" />
+    <parameter name="TeamName" value="Selenium" />
+    <parameter name="packageName"  value="0Winsy SWD Package" />
+    <parameter name="DistriMethType" value="Push" />
+    <parameter name="methodName"  value="0Winsy push Method" />
+    <parameter name="taskName"	value="0Winsy SWD task"/>
+    <parameter name="packagefile" value="http://w2k8r2-sel/ldlogon/winsy/SWD/ASPack 2.12.exe" />
+    <test name="testAdminTask" preserve-order="true">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCasesForIE.TestAdminTask">
+                <methods>
+                    <include name="testAdminTask" />
+                    
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

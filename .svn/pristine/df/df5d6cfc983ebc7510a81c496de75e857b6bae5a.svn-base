@@ -1,0 +1,18 @@
+<suite name="69672 Schedule Team Scripts" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="http://w2k8r2-sel/remote/frameset.aspx" />
+    <parameter name="user1" value="LoginExe/winsy2.exe" />
+    <parameter name="user2" value="LoginExe/dandan76.exe" />
+    <test name="scheduleTeamScripts" preserve-order="true">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCasesForIE.ScheduleTeamScripts">
+                <methods>
+                    <include name="scheduleTeamScripts" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

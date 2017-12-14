@@ -1,0 +1,19 @@
+<suite name="62502 Custom column sets" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+ <parameter name="url" value="http://w2k8r2-sel/remote/frameset.aspx" />
+    <parameter name="loginexe" value="LoginExe/dandan76.exe" />
+    <parameter name="column1"  value="winsyColumnSet1"/>
+    <parameter name="column2"  value="winsyColumnSet2"/>
+    <test name="customColumSetting" preserve-order="true">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCases.CustomColumSetting">
+                <methods>
+                    <include name="customColumSetting" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

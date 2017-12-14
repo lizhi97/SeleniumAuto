@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test suite Network Profile" duration-ms="73336" started-at="2014-09-02T09:50:28Z" finished-at="2014-09-02T09:51:42Z">
+    <groups>
+    </groups>
+    <test name="login" duration-ms="73336" started-at="2014-09-02T09:50:28Z" finished-at="2014-09-02T09:51:42Z">
+      <class name="com.landesk.avalanche.TestCases.TestCaseNetworkProfile">
+        <test-method status="PASS" signature="test53136(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.landesk.avalanche.TestCases.TestCaseNetworkProfile@539d2bed]" name="test53136" duration-ms="46709" started-at="2014-09-02T02:50:28Z" finished-at="2014-09-02T02:51:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://staging.aod.wavelink.com/AvalancheWeb/login.jsf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yanxi.diao@landesk.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[landesk1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0JasonNetworkProfile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test53136 -->
+        <test-method status="PASS" signature="test53142(java.lang.String)[pri:0, instance:com.landesk.avalanche.TestCases.TestCaseNetworkProfile@539d2bed]" name="test53142" duration-ms="19483" started-at="2014-09-02T02:51:15Z" finished-at="2014-09-02T02:51:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0JasonNetworkProfile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test53142 -->
+        <test-method status="PASS" signature="test53169(java.lang.String)[pri:0, instance:com.landesk.avalanche.TestCases.TestCaseNetworkProfile@539d2bed]" name="test53169" duration-ms="7131" started-at="2014-09-02T02:51:35Z" finished-at="2014-09-02T02:51:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0JasonNetworkProfile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test53169 -->
+      </class> <!-- com.landesk.avalanche.TestCases.TestCaseNetworkProfile -->
+    </test> <!-- login -->
+  </suite> <!-- Test suite Network Profile -->
+</testng-results>

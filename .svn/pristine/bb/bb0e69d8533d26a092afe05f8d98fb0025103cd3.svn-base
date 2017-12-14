@@ -1,0 +1,21 @@
+<suite name="62489 Remote execute with parameters" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="http://w2k8r2-sel/remote/frameset.aspx" />
+    <parameter name="loginexe" value="LoginExe/dandan76.exe" />
+    <parameter name="deviceName" value="HPRP5800-PC" />
+    <parameter name="user1" value="LoginExe/winsy1.exe" />
+    <parameter name="user2" value="LoginExe/winsy2.exe" />
+    <parameter name="packagefile" value="http://w2k8r2-sel/ldlogon/winsy/SWD/ASPack 2.12.exe" />
+    <test name="remoteExecute" preserve-order="true">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCasesForIE.RemoteExecute">
+                <methods>
+                    <include name="remoteExecute" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

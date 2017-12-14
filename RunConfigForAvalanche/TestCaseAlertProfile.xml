@@ -1,0 +1,25 @@
+<suite name="TestCaseAlertProfile" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="https://staging.aod.wavelink.com/AvalancheWeb/login.jsf" />
+    <parameter name="username" value="Yanxi.diao@landesk.com" />
+    <parameter name="password" value="landesk1" />
+    <test name="login" preserve-order="true">
+        <classes>
+            <class name="com.landesk.avalanche.TestCases.TestCaseAlertProfile">
+                <methods>
+                    <include name="test53069" />
+                    <include name="test53070" />
+                    <include name="test53071" />
+                    <include name="test53072" />
+                    <include name="test53094" />
+                    <include name="test53106" />
+                    <include name="test53109" />
+                    <include name="test54033" />
+                </methods>
+            </class>
+         </classes>
+    </test>
+</suite>

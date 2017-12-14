@@ -1,0 +1,18 @@
+<suite name="62497 The functions in the right-click menu of agent on the web console should work well" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="http://w2k8r2-sel/remote/frameset.aspx" />
+    <parameter name="loginexe" value="LoginExe/dandan76.exe" />
+    <parameter name="DeviceId" value="2" />
+    <test name="rightClickMenuTest" preserve-order="true">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCases.RightClickMenuTest">
+                <methods>
+                    <include name="rightClickMenuTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

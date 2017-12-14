@@ -1,0 +1,18 @@
+<suite name="59577 Schedule software packages from Team packages group with different limited scopes" verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="https://staging.aod.wavelink.com/AvalancheWeb/login.jsf" />
+    <parameter name="username" value="Yanxi.diao@landesk.com" />
+    <parameter name="password" value="landesk1" />
+    <test name="login" preserve-order="true">
+        <classes>
+            <class name="com.landesk.avalanche.TestCases.Login">
+                <methods>
+                    <include name="test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

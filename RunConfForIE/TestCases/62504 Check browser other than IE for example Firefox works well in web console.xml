@@ -1,0 +1,22 @@
+<suite name="62504 Check browser other than IE for example Firefox works well in web console." verbose="2">
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter" />
+     <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+  </listeners>
+    <parameter name="url" value="http://w2k8r2-sel/remote/frameset.aspx" />
+    <parameter name="loginexe" value="LoginExe/dandan76.exe" />
+    <parameter name="computerName" value="HPRP5800-PC" />
+    <parameter name="deviceName" value="HPRP5800-PC" />
+    <parameter name="packName"  value="HYMSIPackage" />
+    <parameter name="methodName"  value="HYPolicyMethod" />
+    <parameter name="packagefile" value="http://w2k8r2-sel/ldlogon/winsy/msi/orca.Msi" />
+    <test name="checkBaseFuncationTest" preserve-order="true">
+        <classes>
+            <class name="com.landesk.ldms.webconsole.TestCasesForIE.CheckBaseFuncationTest">
+                <methods>
+                    <include name="checkBaseFuncationTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
